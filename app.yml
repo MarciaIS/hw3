@@ -2,12 +2,5 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
-handlers:
-- url: /
-  script: home.app
-
-- url: /index\.html
-  script: home.app
-
 - url: /css
   static_dir: css
