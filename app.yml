@@ -2,5 +2,14 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
+handlers:
+- url: /
+  static_files: website/index.html
+  upload: website/index.html
+
+- url: /(.*)
+  static_files: website/\1
+  upload: website/\1
+
 - url: /css
   static_dir: css
